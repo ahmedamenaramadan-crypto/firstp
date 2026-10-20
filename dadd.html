@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+body{
+    background-color: rgb(43, 101, 226);
+}
+h1{ 
+    text-align: center;
+    background-color: brown;
+    font-size: 30px;
+}
+div{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    animation: squared 2s linear 1s infinite both running ;
+
+}
+@keyframes squared{
+    0%{
+        translate: 0 0;
+        background-color: blue;
+        rotate: calc(50deg);
+    }
+    25%{
+        translate: 0 500px;
+        background-color: purple;
+        rotate: calc(40deg);
+    }
+    50%{
+        translate: 400px 500px;
+        background-color: brown;
+        rotate: calc(60deg);
+    }
+    75%{translate: 500px 0;
+        background-color: black;
+        rotate: calc(70deg)
+
+    }
+    100%{
+        0 0;
+        background-color:pink;
+        rotate:calc(80deg)
+    }
+    div:hover{
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>engineer reem is programmer</h1>
+ <div></div>   
+</body>
+</html>
